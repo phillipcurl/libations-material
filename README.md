@@ -3,8 +3,7 @@
 
 ```bash
 # clone our repo
-# --depth 1 removes all but one .git commit history
-git clone
+git clone https://www.github.com/phillipcurl/libations-material.git
 
 # change directory to our repo
 cd libations-material
