@@ -1,0 +1,25 @@
+<!--
+@Author: Phillip Curl <PC>
+@Date:   2016-05-13T21:21:49-04:00
+@Email:  phillipcurl@gmail.com
+@Project: Libations-Portal
+@Last modified by:   PC
+@Last modified time: 2016-05-13T21:26:21-04:00
+-->
+
+<nav class="navbar navbar-fixed-top navbar-light bg-secondary">
+  <div class="nav navbar-nav pull-left">
+    <a [routerLink]="['/']" class="navbar-brand fancy">
+      Libations
+      <!--<img height="40px" width="120px" src="//static1.squarespace.com/static/52a921f6e4b028f890dd2ada/t/52f8398ce4b013e3f9469869/1434762061923/?format=1500w">-->
+    </a>
+  </div>
+  <div class="nav navbar-nav pull-right">
+    <!--<a [routerLink]="['/home']" class="nav-item nav-link">HOME</a>-->
+    <a [routerLink]="['/events']" class="nav-item nav-link">SCHEDULE</a>
+    <a [routerLink]="['/time']" class="nav-item nav-link">TIME</a>
+    <a [routerLink]="['/about']" class="nav-item nav-link">ABOUT</a>
+    <a [routerLink]="['/manage']" class="nav-item nav-link">MANAGE</a>
+    <a [routerLink]="['/profile']" class="nav-item nav-link"><i class="fa fa-user"></i></a> 
+  </div>
+</nav>
