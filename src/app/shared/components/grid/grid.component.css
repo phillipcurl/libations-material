@@ -1,24 +1,19 @@
-@import './../../scss/variables';
-
-td {
+:host td {
   padding: 0;
 }
-td div {
+:host td div {
    padding: 0.75rem;
    min-height: 20px;
    transition: all 0.3s ease-out;
 }
 
-td > div > a, i {
-  // font-weight: 700;
-  &:hover {
+:host td > div > a, i :hover {
     cursor: pointer;
-    color: $brand-primary;
+    color: red;
     text-decoration: none;
   }
-}
 
-.bg-success {
+:host .bg-success {
     color: #3c763d !important;
     background-color: #dff0d8 !important;
     animation: fadeout 2s forwards;

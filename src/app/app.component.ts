@@ -24,14 +24,24 @@ import { AppState } from './app.service';
             <span md-line>Home</span>
             <span md-line class="secondary">A brief description of the view</span>
           </a>
-          <a md-list-item router-active [routerLink]=" ['./detail'] ">
-            <md-icon md-list-icon>motorcycle</md-icon>
-            <span md-line>Detail</span>
-            <span md-line class="secondary">A brief description of the view</span>
-          </a>
           <a md-list-item router-active [routerLink]=" ['./about'] ">
             <!-- <md-icon md-list-icon>{{view.icon}}</md-icon> -->
             <span md-line>About</span>
+            <span md-line class="secondary">A brief description of the view</span>
+          </a>
+          <a md-list-item router-active [routerLink]=" ['./events'] ">
+            <md-icon md-list-icon>motorcycle</md-icon>
+            <span md-line>Events</span>
+            <span md-line class="secondary">A brief description of the view</span>
+          </a>
+          <a md-list-item router-active [routerLink]=" ['./manage'] ">
+            <md-icon md-list-icon>motorcycle</md-icon>
+            <span md-line>Manage</span>
+            <span md-line class="secondary">A brief description of the view</span>
+          </a>
+          <a md-list-item router-active [routerLink]=" ['./detail'] ">
+            <md-icon md-list-icon>motorcycle</md-icon>
+            <span md-line>Detail</span>
             <span md-line class="secondary">A brief description of the view</span>
           </a>
         </md-nav-list>

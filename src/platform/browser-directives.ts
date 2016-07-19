@@ -9,7 +9,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 import { REACTIVE_FORM_DIRECTIVES } from '@angular/forms';
 
 // Angular 2 Material 2
-// TODO(gdi2290): replace with @angular2-material/all
+// TODO: replace with @angular2-material/all
 import { MATERIAL_DIRECTIVES } from './browser/angular2-material2';
 
 // application_directives: directives that are global through out the application
