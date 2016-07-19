@@ -23,7 +23,14 @@ export const routes: RouterConfig = [
     canActivate: [ WebpackAsyncRoute ],
     children: [
       { path: '', component: 'ManageUsers' },  // must be included
-      { path: 'users', component: 'ManageUsers' }  // must be included
+      { path: 'brands', component: 'ManageBrands'},  // must be included
+      { path: 'campaigns', component: 'ManageCampaigns'},  // must be included
+      { path: 'clients', component: 'ManageClients'},  // must be included
+      { path: 'events', component: 'ManageEvents'},  // must be included
+      { path: 'locations', component: 'ManageLocations'},  // must be included
+      { path: 'time', component: 'ManageTime'},  // must be included
+      { path: 'users', component: 'ManageUsers'},  // must be included
+      
     ]},
   { path: 'detail', component: 'Detail',
     canActivate: [ WebpackAsyncRoute ],
@@ -44,6 +51,7 @@ export const asyncRoutes: AsyncRoutes = {
   'EventsList': require('es6-promise-loader!./+events'), // must be exported with events/index.ts
   'Manage': require('es6-promise-loader!./+manage'),
   'ManageUsers': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts
+  'ManageBrands': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts  
   'Detail': require('es6-promise-loader!./+detail'),
   'Index': require('es6-promise-loader!./+detail'), // must be exported with detail/index.ts
 };
