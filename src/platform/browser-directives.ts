@@ -12,11 +12,14 @@ import { REACTIVE_FORM_DIRECTIVES } from '@angular/forms';
 // TODO: replace with @angular2-material/all
 import { MATERIAL_DIRECTIVES } from './browser/angular2-material2';
 
+import { CUSTOM_APP_DIRECTIVES } from './../app/shared';
+
 // application_directives: directives that are global through out the application
 export const APPLICATION_DIRECTIVES = [
   ...ROUTER_DIRECTIVES,
   ...REACTIVE_FORM_DIRECTIVES,
-  ...MATERIAL_DIRECTIVES
+  ...MATERIAL_DIRECTIVES,
+  ...CUSTOM_APP_DIRECTIVES
 ];
 
 export const DIRECTIVES = [

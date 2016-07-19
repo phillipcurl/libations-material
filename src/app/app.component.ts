@@ -47,11 +47,21 @@ import { AppState } from './app.service';
         </md-nav-list>
       </md-sidenav>
       <md-toolbar color="primary">
+        <a router-active [routerLink]=" ['./'] ">
+          <span>{{ name }}</span>
+        </a>
+        <a router-active [routerLink]=" ['./events'] " class="mdl-layout__tab">Events</a>
+        <a router-active [routerLink]=" ['./about'] " class="mdl-layout__tab">About</a>
+        <a router-active [routerLink]=" ['./detail'] " class="mdl-layout__tab">Detail</a>
+        <a router-active [routerLink]=" ['./manage'] " class="mdl-layout__tab">Manage</a>
+        <div class="mdl-layout-spacer"></div>
+        <button class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">person</i>
+        </button>
         <button md-icon-button (click)="sidenav.open()">
           <md-icon>menu</md-icon>
         </button>
-        <span>{{ name }}</span>
-        <!-- <button md-fab (click)="formShowing=!formShowing">
+         <!-- <button md-fab (click)="formShowing=!formShowing">
           <md-icon>add</md-icon>
         </button> -->
       </md-toolbar>
@@ -61,6 +71,16 @@ import { AppState } from './app.service';
         <router-outlet></router-outlet>
 
         <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Title</div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer>
 
       </md-content>
     </md-sidenav-layout>
