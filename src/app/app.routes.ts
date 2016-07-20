@@ -56,7 +56,6 @@ export const asyncRoutes: AsyncRoutes = {
   'Index': require('es6-promise-loader!./+detail'), // must be exported with detail/index.ts
 };
 
-
 // Optimizations for initial loads
 // An array of callbacks to be invoked after bootstrap to prefetch async routes
 export const prefetchRouteCallbacks: Array<IdleCallbacks> = [
@@ -66,6 +65,5 @@ export const prefetchRouteCallbacks: Array<IdleCallbacks> = [
   asyncRoutes['Detail'],
    // es6-promise-loader returns a function
 ];
-
 
 // Es6PromiseLoader and AsyncRoutes interfaces are defined in custom-typings
