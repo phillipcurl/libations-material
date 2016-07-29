@@ -52,6 +52,12 @@ export const asyncRoutes: AsyncRoutes = {
   'Manage': require('es6-promise-loader!./+manage'),
   'ManageUsers': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts
   'ManageBrands': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts  
+  'ManageClients': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts 
+  'ManageEvents': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts  
+  'ManageCampaigns': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts  
+  'ManageLocations': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts  
+  'ManageTime': require('es6-promise-loader!./+manage'), // must be exported with manage/index.ts  
+  
   'Detail': require('es6-promise-loader!./+detail'),
   'Index': require('es6-promise-loader!./+detail'), // must be exported with detail/index.ts
 };

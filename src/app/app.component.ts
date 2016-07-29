@@ -5,6 +5,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
 
+import { BrandService, CampaignService, ClientService, EventService, LocationService, TimeService, UserService } from './shared/services';
+
+
 /*
  * App Component
  * Top Level Component
@@ -18,7 +21,7 @@ import { AppState } from './app.service';
   template: `
     <md-sidenav-layout fullscreen>
       <md-sidenav #sidenav>
-        <md-nav-list>
+        <md-nav-list (click)="sidenav.close()">
           <a md-list-item router-active [routerLink]=" ['./'] ">
             <md-icon md-list-icon>home</md-icon>
             <span md-line>Home</span>
@@ -84,7 +87,8 @@ import { AppState } from './app.service';
 
       </md-content>
     </md-sidenav-layout>
-  `
+  `,
+  providers: [ BrandService, CampaignService, ClientService, EventService, LocationService, TimeService, UserService ]
 })
 export class App {
   libationsLogo = 'assets/img/libations-logo.png';

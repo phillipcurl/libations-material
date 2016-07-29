@@ -16,7 +16,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-light">
           <a [routerLink]="['./brands']" class="mdl-layout__tab is-active">Brands</a>
           <a [routerLink]="['./campaigns']" class="mdl-layout__tab is-active">Campaigns</a>
           <a [routerLink]="['./clients']" class="mdl-layout__tab is-active">Clients</a>
