@@ -5,9 +5,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
 
-import { BrandService, CampaignService, ClientService, EventService, LocationService, TimeService, UserService } from './shared/services';
-
-
 /*
  * App Component
  * Top Level Component
@@ -87,8 +84,7 @@ import { BrandService, CampaignService, ClientService, EventService, LocationSer
 
       </md-content>
     </md-sidenav-layout>
-  `,
-  providers: [ BrandService, CampaignService, ClientService, EventService, LocationService, TimeService, UserService ]
+  `
 })
 export class App {
   libationsLogo = 'assets/img/libations-logo.png';
